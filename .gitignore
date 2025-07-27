@@ -1,0 +1,31 @@
+backend/__pycache__/
+client/dist/
+client/out-tsc/
+
+# Node dependencies
+client/node_modules/
+
+# IDE files
+client/.idea/
+client/.vscode/
+
+# Environment files
+client/src/environments/environment*.ts
+
+# Compiled output
+client/*.js
+client/*.js.map
+
+# System files
+client/.DS_Store
+client/Thumbs.db
+
+# Logs
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+
+# Misc
+client/.sass-cache/
+client/connect.lock
+client/coverage/
