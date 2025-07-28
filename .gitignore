@@ -29,3 +29,5 @@ client/yarn-error.log*
 client/.sass-cache/
 client/connect.lock
 client/coverage/
+dotnet/dotnet.API/bin/
+dotnet/dotnet.API/obj/

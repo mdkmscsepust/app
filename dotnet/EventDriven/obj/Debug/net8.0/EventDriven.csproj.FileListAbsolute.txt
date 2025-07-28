@@ -1,0 +1,15 @@
+/workspaces/app/dotnet/EventDriven/bin/Debug/net8.0/EventDriven
+/workspaces/app/dotnet/EventDriven/bin/Debug/net8.0/EventDriven.deps.json
+/workspaces/app/dotnet/EventDriven/bin/Debug/net8.0/EventDriven.runtimeconfig.json
+/workspaces/app/dotnet/EventDriven/bin/Debug/net8.0/EventDriven.dll
+/workspaces/app/dotnet/EventDriven/bin/Debug/net8.0/EventDriven.pdb
+/workspaces/app/dotnet/EventDriven/obj/Debug/net8.0/EventDriven.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/app/dotnet/EventDriven/obj/Debug/net8.0/EventDriven.AssemblyInfoInputs.cache
+/workspaces/app/dotnet/EventDriven/obj/Debug/net8.0/EventDriven.AssemblyInfo.cs
+/workspaces/app/dotnet/EventDriven/obj/Debug/net8.0/EventDriven.csproj.CoreCompileInputs.cache
+/workspaces/app/dotnet/EventDriven/obj/Debug/net8.0/EventDriven.sourcelink.json
+/workspaces/app/dotnet/EventDriven/obj/Debug/net8.0/EventDriven.dll
+/workspaces/app/dotnet/EventDriven/obj/Debug/net8.0/refint/EventDriven.dll
+/workspaces/app/dotnet/EventDriven/obj/Debug/net8.0/EventDriven.pdb
+/workspaces/app/dotnet/EventDriven/obj/Debug/net8.0/EventDriven.genruntimeconfig.cache
+/workspaces/app/dotnet/EventDriven/obj/Debug/net8.0/ref/EventDriven.dll
