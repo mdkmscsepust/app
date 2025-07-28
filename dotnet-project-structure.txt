@@ -1,0 +1,32 @@
+DotnetSeniorPractice/
+│
+├── src/
+│   ├── Api/
+│   │   ├── Controllers/
+│   │   ├── Middleware/
+│   │   └── Program.cs
+│   │
+│   ├── Application/
+│   │   ├── Interfaces/
+│   │   ├── Services/
+│   │   └── DTOs/
+│   │
+│   ├── Domain/
+│   │   ├── Entities/
+│   │   ├── ValueObjects/
+│   │   └── Events/
+│   │
+│   ├── Infrastructure/
+│   │   ├── Data/
+│   │   ├── Repositories/
+│   │   └── Auth/
+│   │
+│   └── SharedKernel/ (optional for reusable base types)
+│
+├── tests/
+│   ├── UnitTests/
+│   └── IntegrationTests/
+│
+├── docker-compose.yml
+├── README.md
+└── .gitignore

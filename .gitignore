@@ -31,3 +31,8 @@ client/connect.lock
 client/coverage/
 dotnet/dotnet.API/bin/
 dotnet/dotnet.API/obj/
+dotnet/EventDriven/bin/
+dotnet/EventDriven/obj/
+
+dotnet/src/Api/obj/
+dotnet/src/Api/bin/
