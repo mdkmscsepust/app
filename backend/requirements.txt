@@ -1,3 +1,8 @@
 uvicorn
 fastapi
 langchain
+pydantic
+httpx
+python-dotenv
+openai
+pytest

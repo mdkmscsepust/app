@@ -36,3 +36,5 @@ dotnet/EventDriven/obj/
 
 dotnet/src/Api/obj/
 dotnet/src/Api/bin/
+
+backend/app/venv/

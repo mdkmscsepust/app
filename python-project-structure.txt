@@ -1,0 +1,22 @@
+fastapi-llm-template/
+│
+├── app/
+│   ├── api/
+│   │   ├── routes/
+│   │   │   └── chat.py        # LLM or app logic
+│   │   └── deps.py            # Dependency functions
+│   ├── core/
+│   │   └── config.py          # Config, env variables
+│   ├── models/
+│   │   └── chat_model.py      # Pydantic models
+│   ├── services/
+│   │   └── openai_service.py  # OpenAI or HuggingFace calls
+│   ├── main.py                # FastAPI entrypoint
+│
+├── tests/
+│   └── test_chat.py           # Pytest test cases
+│
+├── .env                       # API keys & config
+├── requirements.txt           # Python deps
+├── README.md
+└── run.sh                     # Run command for dev
