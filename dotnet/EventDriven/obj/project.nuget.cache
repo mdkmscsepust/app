@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "V4HlDN8R9JA=",
+  "dgSpecHash": "P9R+GMhibKs=",
   "success": true,
-  "projectFilePath": "/workspaces/app/dotnet/EventDriven/EventDriven.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/mouse/Desktop/projects/app/dotnet/EventDriven/EventDriven.csproj",
+  "expectedPackageFiles": [
+    "/home/mouse/.nuget/packages/microsoft.netcore.app.ref/8.0.16/microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
+    "/home/mouse/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.16/microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512",
+    "/home/mouse/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.16/microsoft.netcore.app.host.linux-x64.8.0.16.nupkg.sha512"
+  ],
   "logs": []
 }

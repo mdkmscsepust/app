@@ -7,6 +7,11 @@ namespace app.Controllers;
 [Route("api/[controller]")]
 public class NotificationController : ControllerBase
 {
+    // private readonly IMessageServiceFactory _messageServiceFactory;
+    // public NotificationController(IMessageServiceFactory messageServiceFactory)
+    // {
+    //     _messageServiceFactory = messageServiceFactory;
+    // }
     private readonly Func<MessageType, IMessageService>  _messageFactory;
     public NotificationController(Func<MessageType, IMessageService> messageFactory)
     {
@@ -18,13 +23,15 @@ public class NotificationController : ControllerBase
     {
         MessageType type;
 
-        if (!Enum.TryParse(message, true, out type))
+        if (!Enum.TryParse<MessageType>(message, true, out type))
         {
             return BadRequest("Invalid message type");
         }
-        
+
+        //var service = _messageServiceFactory.Create(type);
         var service = _messageFactory(type);
-        service.SendMessage(type);
+        Console.WriteLine($"Message type: {service}");
+        service.SendMessage($"Message: {message} of type {type}");
         //_messageService.SendMessage(message);
         return Ok("Message sent successfully");
     }

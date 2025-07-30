@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/app/dotnet/EventDriven/EventDriven.csproj": {}
+    "/home/mouse/Desktop/projects/app/dotnet/EventDriven/EventDriven.csproj": {}
   },
   "projects": {
-    "/workspaces/app/dotnet/EventDriven/EventDriven.csproj": {
+    "/home/mouse/Desktop/projects/app/dotnet/EventDriven/EventDriven.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/app/dotnet/EventDriven/EventDriven.csproj",
+        "projectUniqueName": "/home/mouse/Desktop/projects/app/dotnet/EventDriven/EventDriven.csproj",
         "projectName": "EventDriven",
-        "projectPath": "/workspaces/app/dotnet/EventDriven/EventDriven.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/app/dotnet/EventDriven/obj/",
+        "projectPath": "/home/mouse/Desktop/projects/app/dotnet/EventDriven/EventDriven.csproj",
+        "packagesPath": "/home/mouse/.nuget/packages/",
+        "outputPath": "/home/mouse/Desktop/projects/app/dotnet/EventDriven/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "/home/mouse/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -37,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -53,12 +54,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
