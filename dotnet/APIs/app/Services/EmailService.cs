@@ -4,6 +4,6 @@ public class EmailService : IMessageService
 {
     public void SendMessage(string message)
     {
-        Console.WriteLine($"Sending Email: {message}");
+        Console.WriteLine($"Sending Email: hfghfghf {message}");
     }
 }
