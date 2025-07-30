@@ -46,6 +46,9 @@ dotnet/programming//obj/
 dotnet/programming//obj/
 dotnet/programming//obj/
 
+dotnet/APIs/app/obj/
+dotnet/APIs/app/bin/
+
 dotnet/src/Api/obj/
 dotnet/src/Api/bin/
 
