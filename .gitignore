@@ -33,6 +33,18 @@ dotnet/dotnet.API/bin/
 dotnet/dotnet.API/obj/
 dotnet/EventDriven/bin/
 dotnet/EventDriven/obj/
+dotnet/programming/DelegateEventFunc/obj/
+dotnet/programming/DelegateEventFunc/bin/
+dotnet/programming/SyncAsyncDemo/obj/
+dotnet/programming/SyncAsyncDemo/obj/
+dotnet/programming/testapi/obj/
+dotnet/programming/testapi/bin/
+dotnet/programming//obj/
+dotnet/programming//obj/
+dotnet/programming//obj/
+dotnet/programming//obj/
+dotnet/programming//obj/
+dotnet/programming//obj/
 
 dotnet/src/Api/obj/
 dotnet/src/Api/bin/
