@@ -2,15 +2,21 @@ using app.Controllers;
 using app.Data;
 using app.Helpers;
 using app.Repositories;
+using app.Repositories.ProductImageRepository;
 using app.Services;
+using app.Services.ProductImageService;
 using app.Services.ProductService;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddTransient<EmailService>();
 builder.Services.AddTransient<SmsService>();
 builder.Services.AddScoped<IProductRepository,ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<IProductImageRepository, ProductImageRepository>();
+builder.Services.AddScoped<IProductImageService, ProductImageService>();
 
 //builder.Services.AddScoped<IMessageServiceFactory, MessageServiceFactory>();
 
@@ -39,6 +45,12 @@ var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(builder.Environment.ContentRootPath, "Uploads")),
+    RequestPath = "/Resources"
+});
 
 app.UseHttpsRedirection();
 app.UseMiddleware<RequestLoggingMiddleware>();

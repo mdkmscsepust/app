@@ -33,6 +33,6 @@ public class ProductRepository : IProductRepository
 
     public async Task<IEnumerable<Product>> GetAllAsync()
     {
-        return await _dbContext.Products.Take(10).ToListAsync();
+        return await _dbContext.Products.Include(x => x.Category).AsNoTracking().ToListAsync();
     }
 }

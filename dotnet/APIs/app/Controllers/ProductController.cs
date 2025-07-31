@@ -1,4 +1,5 @@
 using app.Models;
+using app.Models.RequestModels;
 using app.Services.ProductService;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,21 +35,21 @@ public class ProductController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Add(Product product)
+    public async Task<IActionResult> Add(ProductInDTO product)
     {
         if (await _productService.AddAsync(product))
         {
-            return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
+            return Ok("Product added successfully");
         }
         return BadRequest();
     }
 
-    [HttpPut]
-    public async Task<IActionResult> Update(Product product)
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Update(int id, [FromBody] ProductInDTO product)
     {
-        if (await _productService.UpdateAsync(product))
+        if (await _productService.UpdateAsync(id,product))
         {
-            return NoContent();
+            return Ok("Product updated successfully");
         }
         return BadRequest();
     }
