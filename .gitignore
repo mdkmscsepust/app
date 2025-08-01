@@ -48,6 +48,14 @@ dotnet/programming//obj/
 
 dotnet/APIs/app/obj/
 dotnet/APIs/app/bin/
+dotnet/APIs/app/App.API/obj/
+dotnet/APIs/app/App.API/bin/
+dotnet/APIs/app/App.Domain/obj/
+dotnet/APIs/app/App.Domain/bin/
+dotnet/APIs/app/App.Application/obj/
+dotnet/APIs/app/App.Application/bin/
+dotnet/APIs/app/App.Infrastructure/obj/
+dotnet/APIs/app/App.Infrastructure/bin/
 
 dotnet/src/Api/obj/
 dotnet/src/Api/bin/
