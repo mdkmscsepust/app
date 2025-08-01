@@ -4,8 +4,8 @@ namespace App.Domain.ValueObject;
 
 public class Contact
 {
-    public string CounrtyCode { get; set; }
-    public string Number { get; set; }
+    public string CounrtyCode { get; }
+    public string Number { get; }
     public Contact() { }
     public Contact(string counrtyCode, string number)
     {

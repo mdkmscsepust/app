@@ -8,7 +8,7 @@ namespace App.Domain.ValueObject;
 
 public class Email
 {
-    public string Value { get; set; }
+    public string Value { get; }
     public Email() { }
     public Email(string email)
     {
