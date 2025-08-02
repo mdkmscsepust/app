@@ -17,6 +17,6 @@ public class Email
     }
     public bool IsValid(string email)
     {
-        return Regex.IsMatch(email, @"^\S+@\S+\.\S+$");
+        return !string.IsNullOrEmpty(email) && Regex.IsMatch(email, @"^\S+@\S+\.\S+$");
     }
 }

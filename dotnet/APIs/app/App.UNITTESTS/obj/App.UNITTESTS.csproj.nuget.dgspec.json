@@ -4,6 +4,154 @@
     "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.UNITTESTS/App.UNITTESTS.csproj": {}
   },
   "projects": {
+    "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.API/App.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.API/App.API.csproj",
+        "projectName": "App.API",
+        "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.API/App.API.csproj",
+        "packagesPath": "/home/mouse/.nuget/packages/",
+        "outputPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mouse/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Application/App.Application.csproj": {
+                "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Application/App.Application.csproj"
+              },
+              "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Infrastructure/App.Infrastructure.csproj": {
+                "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Infrastructure/App.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Application/App.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Application/App.Application.csproj",
+        "projectName": "App.Application",
+        "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Application/App.Application.csproj",
+        "packagesPath": "/home/mouse/.nuget/packages/",
+        "outputPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mouse/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Domain/App.Domain.csproj": {
+                "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Domain/App.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Domain/App.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -63,6 +211,98 @@
         }
       }
     },
+    "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Infrastructure/App.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Infrastructure/App.Infrastructure.csproj",
+        "projectName": "App.Infrastructure",
+        "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Infrastructure/App.Infrastructure.csproj",
+        "packagesPath": "/home/mouse/.nuget/packages/",
+        "outputPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mouse/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Application/App.Application.csproj": {
+                "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Application/App.Application.csproj"
+              },
+              "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Domain/App.Domain.csproj": {
+                "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Domain/App.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.UNITTESTS/App.UNITTESTS.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -85,8 +325,17 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.API/App.API.csproj": {
+                "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.API/App.API.csproj"
+              },
+              "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Application/App.Application.csproj": {
+                "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Application/App.Application.csproj"
+              },
               "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Domain/App.Domain.csproj": {
                 "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Domain/App.Domain.csproj"
+              },
+              "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Infrastructure/App.Infrastructure.csproj": {
+                "projectPath": "/home/mouse/Desktop/projects/app/dotnet/APIs/app/App.Infrastructure/App.Infrastructure.csproj"
               }
             }
           }
@@ -111,9 +360,25 @@
               "target": "Package",
               "version": "[8.5.0, )"
             },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.12.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
             },
             "coverlet.collector": {
               "target": "Package",

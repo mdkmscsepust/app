@@ -4,14 +4,22 @@ namespace App.Domain.ValueObject;
 
 public class Contact
 {
-    public string CounrtyCode { get; }
+    public string CountryCode { get; }
     public string Number { get; }
     public Contact() { }
-    public Contact(string counrtyCode, string number)
+    public Contact(string countryCode, string number)
     {
-        if (!Regex.IsMatch(number, @"^\S+01\S$")) throw new ArgumentException("Invalid contact");
+        if (!IsValid(number))
+        {
+            throw new ArgumentException("Invalid mobile number");
+        }
         Number = number;
-        CounrtyCode = counrtyCode;
+        CountryCode = countryCode;
     }
-    public string Full => $"+{CounrtyCode}-{Number}";
+    public string Full => $"+{CountryCode}-{Number}";
+
+    private bool IsValid(string number)
+    {
+        return !string.IsNullOrEmpty(number) && Regex.IsMatch(number, @"^01[0-9]{9}$");
+    }
 }

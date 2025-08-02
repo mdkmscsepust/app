@@ -7,6 +7,7 @@ using App.Infrastructure.Data;
 using App.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddTransient<EmailService>();
@@ -16,6 +17,8 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IFileService, FileService>();
 builder.Services.AddScoped<IProductImageRepository, ProductImageRepository>();
 builder.Services.AddScoped<IProductImageService, ProductImageService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 //builder.Services.AddScoped<IMessageServiceFactory, MessageServiceFactory>();
 
@@ -44,16 +47,17 @@ var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(builder.Environment.ContentRootPath, "Uploads")),
-    RequestPath = "/Resources"
-});
+// app.UseStaticFiles(new StaticFileOptions
+// {
+//     FileProvider = new PhysicalFileProvider(
+//         Path.Combine(builder.Environment.ContentRootPath, "Uploads")),
+//     RequestPath = "/Resources"
+// });
 
 app.UseHttpsRedirection();
 app.UseMiddleware<RequestLoggingMiddleware>();
 app.MapControllers();
 app.Run();
 
-
+// Add this line to make the Program class public for the test project.
+public partial class Program { }

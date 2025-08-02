@@ -13,9 +13,24 @@ public class ApplicationDbContext : DbContext
     public DbSet<Category> Categories { get; set; }
     public DbSet<Restaurant> Restaurants { get; set; }
     public DbSet<Branch> Branches { get; set; }
+    public DbSet<User> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<User>(builder =>
+        {
+            builder.HasKey(x => x.Id);
+            builder.OwnsOne(x => x.Email, email =>
+            {
+                email.Property(p => p.Value).HasColumnName("Email").IsRequired();
+            });
+            builder.OwnsOne(x => x.Contact, contact =>
+            {
+                contact.Property(x => x.Number).HasColumnName("PhoneNumber").IsRequired();
+                contact.Property(p => p.CountryCode).HasColumnName("CountryCode").IsRequired();
+            });
+        });
+
         modelBuilder.Entity<Restaurant>().HasKey(x => x.Id);
         modelBuilder.Entity<Restaurant>().Property(x => x.Name)
                     .HasMaxLength(5)
@@ -31,7 +46,7 @@ public class ApplicationDbContext : DbContext
             });
             builder.OwnsOne(x => x.Contact, contact =>
             {
-                contact.Property(p => p.CounrtyCode).HasColumnName("CountryCode");
+                contact.Property(p => p.CountryCode).HasColumnName("CountryCode");
                 contact.Property(p => p.Number).HasColumnName("PhoneNumber").IsRequired();
             });
         });
