@@ -3,6 +3,7 @@ WORKDIR /app
 COPY "App.API/App.API.csproj" "."
 RUN dotnet restore
 COPY . .
+RUN dotnet test App.UNITTESTS/App.UNITTESTS.csproj
 RUN dotnet publish App.API/App.API.csproj -c Release -o /app/publish
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app

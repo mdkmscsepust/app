@@ -56,8 +56,8 @@ dotnet/APIs/app/App.Application/obj/
 dotnet/APIs/app/App.Application/bin/
 dotnet/APIs/app/App.Infrastructure/obj/
 dotnet/APIs/app/App.Infrastructure/bin/
-dotnet/APIs/app/App.UNITTESTS/bin/
 dotnet/APIs/app/App.UNITTESTS/obj/
+dotnet/APIs/app/App.UNITTESTS/bin/
 
 dotnet/src/Api/obj/
 dotnet/src/Api/bin/

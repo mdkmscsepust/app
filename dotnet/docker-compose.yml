@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: ./APIs/app
+      dockerfile: Dockerfile
+    
+    ports:
+      - 5003:8080
